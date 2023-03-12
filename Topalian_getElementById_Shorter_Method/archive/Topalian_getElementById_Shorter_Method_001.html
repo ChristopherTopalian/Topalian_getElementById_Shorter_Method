@@ -1,0 +1,55 @@
+<!-- Dedicated to God the Father -->
+
+<!-- All Rights Reserved Christopher Topalian Copyright 2000-2023 -->
+
+<!-- Topalian_getElementById_Shorter_Method.html -->
+
+<!-- Video: https://www.youtube.com/watch?v=H4y_B-1xuwM -->
+
+<html>
+<head>
+<title> Topalian getElementById Shorter Method </title>
+
+<style>
+
+body
+{
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+div
+{
+    padding-top: 10px;
+}
+
+</style>
+
+<script>
+
+// shorter method for using document.getElementById 
+function ge(whichId)
+{
+    return document.getElementById(whichId);
+}
+
+function showWords(whichId, whichWords)
+{
+    ge(whichId).innerHTML = whichWords;
+}
+
+</script>
+
+<body>
+
+<button onclick = "showWords('theElement', 'Hydrogen');"> H </button>
+
+<button onclick = "showWords('theElement', 'Helium');"> He </button>
+
+<div id = "theElement"></div>
+
+</body>
+
+</html>
