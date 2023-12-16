@@ -1,0 +1,61 @@
+<!-- Dedicated to God the Father -->
+
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2023 -->
+
+<!-- https://github.com/ChristopherTopalian -->
+
+<!-- https://github.com/ChristopherAndrewTopalian -->
+
+<!-- Topalian_JavaScript_getElementById_Shorter_Method.html -->
+
+<!-- Version 003 -->
+
+<html>
+<head>
+<title> Topalian JavaScript getElementById Shorter Method </title>
+
+<style>
+
+body
+{
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+div
+{
+    padding-top: 10px;
+}
+
+</style>
+
+<script>
+
+// document.getElementById shortcut
+function ge(whichId)
+{
+    let result = document.getElementById(whichId);
+
+    return result;
+}
+
+function showText(whichId, whichText)
+{
+    ge(whichId).innerHTML = whichText;
+}
+
+</script>
+
+<body>
+
+<button onclick = "showText('theElement', 'Hydrogen');"> H </button>
+
+<button onclick = "showText('theElement', 'Helium');"> He </button>
+
+<div id = "theElement"></div>
+
+</body>
+
+</html>
